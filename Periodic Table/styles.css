@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 1rem;
+}
+
+.element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+#element-info {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#close-info {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
